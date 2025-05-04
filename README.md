@@ -40,7 +40,7 @@ CREATE DATABASE  ems;
 USE ems;
 
 -- Admin table
-CREATE TABLE IF NOT EXISTS admin (
+CREATE TABLE  admin (
   id INT AUTO_INCREMENT PRIMARY KEY,
   email VARCHAR(255) NOT NULL,
   password VARCHAR(255) NOT NULL
@@ -50,13 +50,13 @@ CREATE TABLE IF NOT EXISTS admin (
 INSERT INTO admin (email, password) VALUES ('admin@gmail.com', 'admin');
 
 -- Category table
-CREATE TABLE IF NOT EXISTS category (
+CREATE TABLE category (
   id INT AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(255) NOT NULL
 );
 
 -- Employee table
- CREATE TABLE IF NOT EXISTS employee (
+ CREATE TABLE employee (
   id INT AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(255) NOT NULL,
   email VARCHAR(255) NOT NULL,
@@ -69,7 +69,10 @@ CREATE TABLE IF NOT EXISTS category (
 );
 
 
+"C:\Users\M S I\Downloads\React ems.png"
 
 
-![Alt text]("C:\Users\M S I\Downloads\React ems.png")
+
+
+
 
