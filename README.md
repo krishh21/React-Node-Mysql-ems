@@ -35,41 +35,9 @@ Backend (Node.js + Express)
      npx nodemon index.js
 
 
--- Create database
-CREATE DATABASE  ems;
-USE ems;
 
--- Admin table
-CREATE TABLE  admin (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  email VARCHAR(255) NOT NULL,
-  password VARCHAR(255) NOT NULL
-);
+![GitHub Logo](https://github.com/reactems.png)
 
--- Insert default admin (optional)
-INSERT INTO admin (email, password) VALUES ('admin@gmail.com', 'admin');
-
--- Category table
-CREATE TABLE category (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(255) NOT NULL
-);
-
--- Employee table
- CREATE TABLE employee (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(255) NOT NULL,
-  email VARCHAR(255) NOT NULL,
-  password VARCHAR(255) NOT NULL,
-  address TEXT,
-  salary DECIMAL(10, 2),
-  image VARCHAR(255),
-  category_id INT,
-  FOREIGN KEY (category_id) REFERENCES category(id)
-);
-
-
-"C:\Users\M S I\Downloads\React ems.png"
 
 
 
